@@ -1,0 +1,188 @@
+/* Estilos generales */
+/* Configura la fuente y el tamaño de la fuente para todo el cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232, 174, 66); /* Cambia el color de fondo del cuerpo */
+    font-size: 14px;
+}
+
+/* Estilo para los bloques */
+/* Establece el estilo compartido para varios tipos de bloques */
+header, nav, aside, section, article, footer {
+    background-color: white; /* Fondo de los bloques */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra de los bloques */
+    border-radius: 8px; /* Bordes redondeados */
+    margin: 20px; /* Margen exterior */
+    padding: 20px; /* Relleno interno */
+}
+
+/* Estilo para el encabezado */
+/* Define el estilo del encabezado, alineación y espacio entre elementos */
+header {
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+}
+
+/* Estilo para el logo */
+/* Agrega estilo al logo en el encabezado */
+header img {
+    padding: 5px 12px; /* Espaciado dentro del logo */
+    width: 100px; /* Ancho máximo de la imagen del logo */
+}
+
+/* Estilo para el título */
+/* Configura el estilo del título principal */
+h1 {
+    font-weight: bold; /* Fuente en negrita */
+    color:  rgb(94, 0, 14); /* Cambia el color del título */
+    font-size: 1.2em; /* Tamaño de la fuente del título */
+    margin-left: 10px; /* Espacio a la izquierda del título */
+}
+
+/* Estilo para los botones */
+/* Establece el estilo de los botones */
+button {
+    background-color: rgb(94, 0, 14); /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    transition: background-color 0.3s ease; /* Transición de color suave */
+}
+
+/* Cambia el color de fondo del botón al pasar el ratón */
+button:hover {
+    background-color: rgb(157, 0, 22);
+}
+
+/* Estilo para el aside */
+/* Configura el estilo del panel lateral */
+aside {
+    width: 20%; /* Ancho del panel lateral */
+    background-color: rgb(94, 0, 14); /* Color de fondo */
+    overflow: hidden; /* Controla el desbordamiento del contenido */
+    padding: 5px; /* Espaciado interno */
+    float: left; /* Flota a la izquierda */
+    clear: both; /* Limpia el flujo del contenido */
+    color: rgb(255, 255, 255); /* Cambia el color del texto en el panel lateral */
+}
+
+/* Estilo para el contenido principal */
+/* Configura el estilo del contenido principal */
+#contenido-de-inicio {
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+    width: 94%; /* Ancho del contenido principal */
+    margin-top: 20px; /* Margen superior */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: row; /* Dirección de los elementos en una fila */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: flex-start; /* Alineación vertical de los elementos */
+}
+
+/* Estilo para los cuadros */
+div.cuadros {
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Alineación vertical de los elementos */
+    flex-wrap: wrap; /* Envuelve los cuadros cuando no caben en una fila */
+    gap: 20px; /* Espacio entre cuadros */
+}
+
+/* Estilo para los cuadros individuales */
+div.cuadros > div {
+    flex: 1; /* Proporción de espacio flexible */
+    padding: 20px; /* Espaciado interno del cuadro */
+    background-color: white; /* Color de fondo del cuadro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra del cuadro */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center; /* Alineación del contenido del cuadro */
+}
+
+/* Estilo para la barra lateral */
+aside h2 {
+    font-size: 20px; /* Tamaño de la fuente */
+    margin-bottom: 20px; /* Margen inferior */
+    font-size: 20px; /* Tamaño de la fuente */
+    text-align: center; /* Alineación del texto en el panel lateral */
+}
+
+/* Estilo para los enlaces en la barra lateral */
+aside nav ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Quita el relleno de la lista */
+}
+
+/* Estilo para los elementos de la lista en la barra lateral */
+aside nav ul li {
+    margin-bottom: 10px; /* Margen inferior de los elementos de la lista */
+}
+
+/* Estilo para los enlaces en la barra lateral */
+aside nav ul li a {
+    color: rgb(0, 0, 0); /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de la fuente */
+    transition: color 0.3s ease; /* Transición de color suave */
+}
+
+/* Cambia el color del enlace al pasar el ratón */
+aside nav ul li a:hover {
+    color: rgb(232, 175, 66);
+}
+
+/* Estilo para los elementos de lista */
+li {
+    list-style-type: none; /* Quita los puntos de la lista */
+}
+
+/* Estilo para elementos <span> */
+span {
+    font-weight: bold; /* Fuente en negrita */
+}
+
+/* Estilo para el pie de página */
+footer {
+    margin-top: 10px; /* Margen superior */
+    margin-bottom: 10px; /* Margen inferior */
+    color: rgb(187, 187, 187); /* Color del texto */
+    font-size: 9px; /* Tamaño de la fuente */
+    text-align: center; /* Alineación del texto en el pie de página */
+}
+
+/* Estilo para los enlaces de navegación */
+nav a {
+    color: rgb(0, 0, 0); /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de la fuente */
+    margin-left: 15px; /* Margen izquierdo entre enlaces */
+    transition: color 0.3s ease; /* Transición de color suave */
+    text-align: center; /* Alineación del texto en el enlace */
+}
+
+/* Cambia el color del enlace al pasar el ratón */
+nav a:hover {
+    color: rgb(232, 175, 66);
+}
+
+/* Estilo para los enlaces en la sección de contacto */
+#contacto a, #ubicacion a{
+    color: rgb(0, 0, 0); /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+    transition: color 0.3s ease; /* Transición de color suave */
+}
+
+/* Cambia el color del enlace al pasar el ratón y agrega subrayado */
+#contacto a:hover, #ubicacion a:hover{
+    color: rgb(232, 175, 66);
+    text-decoration: underline;
+}
+
+/* Estilo para el texto centrado */
+#items {
+    text-align: center; /* Alineación horizontal del texto */
+}
